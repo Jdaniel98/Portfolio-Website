@@ -47,7 +47,7 @@ portfolio-website/
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/portfolio-website.git
+   git clone https://github.com/Jdaniel98/Portfolio-Website.git
    ```
 
 2. Navigate to the project directory:
