@@ -430,3 +430,92 @@ footer {
 footer p {
   text-align: center;
 }
+/* DARK MODE STYLES */
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+  }
+  
+  body.dark-mode p {
+    color: #b3b3b3;
+  }
+  
+  body.dark-mode .details-container {
+    background: #2a2a2a;
+    border-color: #3a3a3a;
+  }
+  
+  body.dark-mode .btn-color-1,
+  body.dark-mode .btn-color-2 {
+    border-color: #ffffff;
+  }
+  
+  body.dark-mode .btn-color-1:hover,
+  body.dark-mode .btn-color-2:hover {
+    background: #ffffff;
+    color: #1a1a1a;
+  }
+  
+  body.dark-mode .btn-color-1 {
+    background: #ffffff;
+    color: #1a1a1a;
+  }
+  
+  body.dark-mode .btn-color-2 {
+    background: none;
+    color: #ffffff;
+  }
+  
+  body.dark-mode .hamburger-icon span {
+    background-color: #ffffff;
+  }
+  
+  body.dark-mode .menu-links {
+    background-color: #1a1a1a;
+  }
+  
+  body.dark-mode .menu-links a {
+    color: #ffffff;
+  }
+  
+  body.dark-mode .color-container {
+    background: #2a2a2a;
+    border-color: #3a3a3a;
+  }
+  
+  body.dark-mode .project-title,
+  body.dark-mode .project-btn {
+    color: #ffffff;
+  }
+  
+  body.dark-mode .contact-info-upper-container {
+    background: #2a2a2a;
+    border-color: #3a3a3a;
+  }
+  body.dark-mode .nav-links a {
+    color: #ffffff;
+  }
+  
+  body.dark-mode .nav-links a:hover {
+    color: #cccccc;
+    text-decoration-color: #cccccc;
+  }
+  
+  body.dark-mode #desktop-nav .logo {
+    color: #ffffff;
+  }
+  
+  #darkModeToggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 1rem;
+  }
+  
+  #darkModeToggle .icon {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  
