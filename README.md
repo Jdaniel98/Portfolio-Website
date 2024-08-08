@@ -1,6 +1,6 @@
 # Portfolio Website
 
-This repository contains the source code for Daniel Owusu Mensah's personal portfolio website. It's a responsive single-page application showcasing skills, projects, and contact information.
+This repository contains the source code for my personal portfolio website. It's a responsive single-page application showcasing skills, projects, and contact information.
 
 ## Features
 
