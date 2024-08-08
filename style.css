@@ -18,6 +18,36 @@ html {
 p {
   color: rgb(85, 85, 85);
 }
+/* Smooth transition for background color and color changes */
+body,
+a,
+.btn,
+.details-container,
+.color-container {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Fade-in animation for sections */
+.section {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover effect for project cards */
+.color-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
 
 /* TRANSITION */
 
@@ -518,4 +548,38 @@ body.dark-mode {
     height: 1.5rem;
     width: 1.5rem;
   }
+/* Project card hover effect */
+.color-container:hover {
+  cursor: pointer;
+}
+
+/* Tooltip styles */
+.icon[title],
+.project-btn[title] {
+  position: relative;
+  display: inline-block;
+}
+
+.icon[title]:before,
+.project-btn[title]:before {
+  content: attr(title);
+  position: absolute;
+  z-index: 1;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.icon[title]:hover:before,
+.project-btn[title]:hover:before {
+  opacity: 1;
+}
   

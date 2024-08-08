@@ -31,3 +31,24 @@ function toggleDarkMode() {
       darkModeIcon.alt = "Light Mode";
     }
   });  
+// Select all navigation links
+const navLinks = document.querySelectorAll('.nav-links a, .menu-links a');
+
+// Add smooth scrolling behavior
+navLinks.forEach(link => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    const targetId = event.target.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+    
+    targetElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+    
+    // Close the mobile menu if it's open
+    if (event.target.closest('.menu-links')) {
+      toggleMenu();
+    }
+  });
+});  
